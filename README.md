@@ -39,7 +39,7 @@ settings.py ში ბოლოში იქნება:
 EMAIL_HOST_USER = ''
 EMAIL_HOST_PASSWORD = ''
 აქ უნდა შევქმნათ, ჩავწეროთ app password (Google Account Settings) და იმეილი საიდანაც გავაგზავნით იმეილებს
-.env შიც იგივე უნდა ჩავწეროთ.
+.env შიც იგივე უნდა ჩავწეროთ. EMAIL_HOST_USER = '' EMAIL_HOST_PASSWORD = ''
 როდესაც ახალ მომხმარებელს დაარეგისტრირებთ საჭირო იქნება  docker desktop-ის ჩართვა და მის running მდგომარეობაში ყოფნა
 შემდეგ მეორე ტერმინალში უნდა დავწეროთ: celery   -A   config   worker -P threads  --loglevel=info
 ეს გავაკეთეთ რათა დარეგისტრირებულ მაილზე მოგვივიდეს ვერიფიკაციის კოდი რომელსაც შემდეგ verification_code-ში ჩავწერთ რაც მეილს გაააქტიურებს.
